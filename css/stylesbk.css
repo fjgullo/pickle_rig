@@ -2,13 +2,88 @@
 
 * { margin: 0.2rem;}
 
+
 /* MENU DESPLEGABLE */
 
 .navbar {
     width: 100%;
-    display: flex;
-    align-items: flex-end;
 }
+
+.container-fluid {
+    display: flex;
+    /* align-items: flex-end; */
+    /* align-self: flex-end; */
+    /* justify-content: space-between; */
+    background-color: #191716;
+    font-family: 'Koulen', cursive;
+    font-size: 25px;
+    margin: 0.5rem;
+    border: 0.2rem;
+
+}
+
+
+
+
+
+.nav {
+    /* border-bottom: 1px solid #EAEAEB; */
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    }
+
+
+.menu {
+    margin: 0 30px 0 0;
+}
+/* .menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+} */
+
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    color: #c2e812;
+}
+
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    
+}
+
 
 body {
     font-family: 'Lato', sans-serif;
@@ -22,23 +97,23 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    background-color: #191716;
     font-family: 'Koulen', cursive;
     font-size: 25px;
     margin: 0.5rem;
     border: 0.2rem;
+    /* width: 1200px; */
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    width: 100px;
 }
 
 ul li {
     list-style: none;
     display: inline-block;
-}
-
-.container-fluid {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    align-self: flex-end;
-    align-items: flex-end;
 }
 
 /* CARDS */
@@ -55,7 +130,7 @@ ul li {
     overflow: hidden;
     flex-direction: row;
     /* padding-top: 1em; */
-    /* padding-bottom: 8em; */
+    padding-bottom: 8em;
 }
 
 .card {
@@ -69,7 +144,6 @@ ul li {
     background-color: #77796978;
     color: aliceblue;
     border-radius: 10px;
-    
 }
 
 
@@ -92,6 +166,7 @@ ul li {
     grid-template-rows: repeat(6, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
+    /* width: 100%; */
     object-fit: fill;
   }
   
@@ -107,6 +182,27 @@ ul li {
     height: auto;}
   
 
+/* .FlexContainer2 {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+    background-color: #77796978;
+    height: 40vh;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.FlexContainer2 div {
+    width: 300px;
+    height: 700px;
+    margin: 10px;
+    background-color: #77796978;
+    color: aliceblue; */
+
 footer {
     background-color: #191716;
     color: aliceblue;
@@ -116,11 +212,14 @@ footer {
 
 }
 
+
 h1 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     font-weight: 100;
+    /* width: 100%; */
     color: aliceblue;
+    /* background-color: #191716; */
     margin: 1rem;
     border: 0.2rem;
 }
@@ -128,6 +227,15 @@ h1 {
 p {
     font-size: 24px;
 }
+
+/* a {text-decoration: none;
+    color: aliceblue;
+    padding: 6px;
+} */
+
+/* a:hover {
+    background-color: #896978;
+} */
 
 img {
     border-radius: 10px;
@@ -142,6 +250,35 @@ a.menu__link:hover {
     background-color: #c2e812;
     color: #191716;
 }
+
+/* .box1 {
+    background-color: #896978;
+    display: inline-block;
+    width: 1200px;
+    height: 300px;
+    margin: 0.5rem;
+    padding: 1rem;
+    /* #77796978 */
+   } */
+
+/* .box2 {
+    background-color: #896978;
+    display: inline-block;
+    width: 230px;
+    height: 300px;
+    margin: 1rem;
+    overflow: hidden;
+    padding: 00.5rem;
+    align-items: center;
+    } */
+
+/* .box3 {
+    background-color: #77796978;
+    display: inline-block;
+    width: 1200px;
+    height: 340px;
+    margin: 1rem;
+} */
 
 .menu-nav {
     display: inline-block;
@@ -158,7 +295,7 @@ a.menu__link:hover {
 .formulario {
     background-color: #77796978;
     color: aliceblue;
-    /* width: 250px; */
+    width: 250px;
     padding: 1rem;
     margin: 1rem;
 }

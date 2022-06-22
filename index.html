@@ -14,41 +14,42 @@
   </head>
   <body>
     <!-- HEADER LOGO AND MENU -->
+
     <header id="header" class="header">
-      <!-- <img src="./img/logo.svg" class="logo" alt="" /> -->
-      <a class="link" href="../index.html">
-        <img src="./img/logo.svg" class="logo" alt="logo" />
-      </a>
-
-      <div class="nav">
-        <label for="toggle">MENU</label>
-        <input type="checkbox" id="toggle"/>
-        <div class="menu">
-      <ul class="menu-nav">
-        <li class="menu__item">
-          <a class="menu__link" href="../index.html">Home</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="./views/Shop.html">Shop</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="./views/About_us.html">About us</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="./views/Contact.html">Contact</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="./views/Youtube.html">Youtube</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-
-
+      <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">PIKCLE</a> -->
+        <img class="logo" src="./img/logo.svg" alt="logo de pickle">
+        <div class="navcontainer">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="menu-nav">
+            <li class="menu__item">
+              <a class="menu__link" href="../index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./views/Shop.html">Shop</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./views/About_us.html">About us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./views/Contact.html">Contact</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./views/Youtube.html">Youtube</a>
+            </li>
+          </ul>        
+        </div>
+      </div>
+     </div>
+     </nav>
     </header>
+
     <!-- SLOGAN -->
     <h1 class="subtitle animate__animated animate__bounceInDown">YOUR MOOD WILL TAKE A TURN</h1>
-    <!-- CARDS -->
 
 <!-- CARROUSEL BOOTSTRAP -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -89,6 +90,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+       <!-- GRID CARDS -->
     
     <section class='cards'>
       <div class="card"> <img class="img" src="./img/img2small.jpg" alt="Imagen de Pickle" /> <p><strong>Lorem, ipsum dolor.</strong></p>
@@ -126,8 +129,7 @@
     </div>
     </section>
     <br />
-    <br />
-    <!-- FOOTER -->
+   <!-- FOOTER -->
     <footer>
       2030 - Pickle Rig. All Rights Reserved
       <p id="footer">Follow us on our social networks</p>
