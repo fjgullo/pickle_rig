@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Lato&display=swap");
+a.menu__link {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 6px; }
+  a.menu__linkhover {
+    background-color: #c2e812;
+    color: #191716; }
+
+a.menu__link {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 6px; }
+  a.menu__linkhover {
+    background-color: #c2e812;
+    color: #191716; }

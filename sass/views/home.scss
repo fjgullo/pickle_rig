@@ -1,0 +1,6 @@
+a.menu__link {text-decoration: none;
+    color: $text-color;
+    padding: 6px;
+    &hover{background-color: $primary;
+        color: $secondary;}
+}

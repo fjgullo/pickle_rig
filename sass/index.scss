@@ -1,0 +1,19 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lato&display=swap');
+// Misc
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+
+// Partials
+@import './partials/footer';
+@import './partials/header';
+
+// Views
+@import './views/about_us';
+@import './views/contact';
+@import './views/shop';
+@import './views/youtube';
+@import './views/home';
+
+@import './misc/mediaQueries';
