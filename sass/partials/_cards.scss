@@ -1,0 +1,41 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    /* background-color: #77796978; */
+    height: 80vh;
+    overflow: hidden;
+    flex-direction: row;
+    /* padding-top: 1em; */
+    /* padding-bottom: 8em; */
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 270px;
+    height: 600px;
+    /* margin: 10px; */
+    padding: 0.3em;
+    background-color: #77796978;
+    color: aliceblue;
+    border-radius: 10px;
+    
+}
+
+
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
+}

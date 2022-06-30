@@ -3,7 +3,14 @@
 $primary: #c2e812;
 $secondary: #191716;
 $text-color: aliceblue;
-$base: #77796978;;
+$base: #77796978;
+
+$palette: (
+    'primary': #c2e812,
+    'secondary': #191716,
+    'text-color': aliceblue,
+    'base': #77796978,
+);
 
 // Spacings
 $spacing-large: 6rem;

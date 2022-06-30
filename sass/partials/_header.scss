@@ -1,6 +1,49 @@
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: 'Koulen', cursive;
+    font-size: 25px;
+    margin: 0.5rem;
+    border: 0.2rem;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu-nav {
+    display: inline-block;
+}
+
+.logo {
+    /* padding: 0.5rem; */
+    margin-right: 40%;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    width: 8rem;
+}
+
+
 a.menu__link {text-decoration: none;
     color: $text-color;
     padding: 6px;
-    &hover{background-color: $primary;
-        color: $secondary;}
+    &:hover {background-color: $primary;
+    color: $secondary;}
+}
+
+.container-fluid {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
 }
